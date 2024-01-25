@@ -38,8 +38,10 @@ class PlayerCharacterTest {
         //GIVEN
         String key = "w";
         int expected = PlayerCharacter.getY() + 1;
+
         //WHEN
         int actual = PlayerCharacter.move(key);
+
         //THEN
         assertEquals(expected, actual);
 
@@ -51,8 +53,10 @@ class PlayerCharacterTest {
         //GIVEN
         String key = "s";
         int expected = PlayerCharacter.getY() - 1;
+
         //WHEN
         int actual = PlayerCharacter.move(key);
+
         //THEN
         assertEquals(expected, actual);
 
@@ -64,8 +68,10 @@ class PlayerCharacterTest {
         //GIVEN
         String key = "a";
         int expected = PlayerCharacter.getX() - 1;
+
         //WHEN
         int actual = PlayerCharacter.move(key);
+
         //THEN
         assertEquals(expected, actual);
 
@@ -77,8 +83,10 @@ class PlayerCharacterTest {
         //GIVEN
         String key = "d";
         int expected = PlayerCharacter.getX() + 1;
+
         //WHEN
         int actual = PlayerCharacter.move(key);
+
         //THEN
         assertEquals(expected, actual);
 
