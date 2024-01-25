@@ -20,4 +20,18 @@ class PlayerCharacterTest {
 
     }
 
+    @Test
+    void getY_whenGameStart_thenReturn0(){
+
+        //GIVEN
+        int expected = 0;
+
+        //WHEN
+        int actual = PlayerCharacter.getY();
+
+        //THEN
+        assertEquals(expected, actual);
+
+    }
+
 }
