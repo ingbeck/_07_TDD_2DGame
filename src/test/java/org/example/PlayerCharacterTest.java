@@ -34,4 +34,17 @@ class PlayerCharacterTest {
 
     }
 
+    @Test
+    void move_whenWIsPressed_thenMove1StepUp(){
+
+        //GIVEN
+        String key = "w";
+        int expected = PlayerCharacter.getX() +1;
+        //WHEN
+        int actual = PlayerCharacter.move(key);
+        //THEN
+        assertEquals(expected, actual);
+
+    }
+
 }
