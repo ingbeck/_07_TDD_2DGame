@@ -13,16 +13,16 @@ public class PlayerCharacter {
         return y;
     }
 
-    public static int move(String key){
+    public static int move(char key){
 
         switch(key){
-            case "w":
+            case 'w':
                 return getY() + 1;
-            case "s":
+            case 's':
                 return getY() - 1;
-            case "a":
+            case 'a':
                 return getX() - 1;
-            case "d":
+            case 'd':
                 return getX() + 1;
             default:
                 return 0;

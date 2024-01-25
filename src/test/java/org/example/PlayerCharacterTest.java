@@ -36,7 +36,7 @@ class PlayerCharacterTest {
     void move_whenWIsPressed_thenMove1StepUp(){
 
         //GIVEN
-        String key = "w";
+        char key = 'w';
         int expected = PlayerCharacter.getY() + 1;
 
         //WHEN
@@ -51,7 +51,7 @@ class PlayerCharacterTest {
     void move_whenSIsPressed_thenMove1StepDown(){
 
         //GIVEN
-        String key = "s";
+        char key = 's';
         int expected = PlayerCharacter.getY() - 1;
 
         //WHEN
@@ -66,7 +66,7 @@ class PlayerCharacterTest {
     void move_whenAIsPressed_thenMove1StepLeft(){
 
         //GIVEN
-        String key = "a";
+        char key = 'a';
         int expected = PlayerCharacter.getX() - 1;
 
         //WHEN
@@ -81,7 +81,7 @@ class PlayerCharacterTest {
     void move_whenDIsPressed_thenMove1StepRight(){
 
         //GIVEN
-        String key = "d";
+        char key = 'd';
         int expected = PlayerCharacter.getX() + 1;
 
         //WHEN
