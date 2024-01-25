@@ -1,7 +1,5 @@
 package org.example;
-
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class PlayerCharacterTest {
@@ -39,7 +37,46 @@ class PlayerCharacterTest {
 
         //GIVEN
         String key = "w";
-        int expected = PlayerCharacter.getX() +1;
+        int expected = PlayerCharacter.getY() + 1;
+        //WHEN
+        int actual = PlayerCharacter.move(key);
+        //THEN
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void move_whenSIsPressed_thenMove1StepDown(){
+
+        //GIVEN
+        String key = "s";
+        int expected = PlayerCharacter.getY() - 1;
+        //WHEN
+        int actual = PlayerCharacter.move(key);
+        //THEN
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void move_whenAIsPressed_thenMove1StepLeft(){
+
+        //GIVEN
+        String key = "a";
+        int expected = PlayerCharacter.getX() - 1;
+        //WHEN
+        int actual = PlayerCharacter.move(key);
+        //THEN
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void move_whenDIsPressed_thenMove1StepRight(){
+
+        //GIVEN
+        String key = "d";
+        int expected = PlayerCharacter.getX() + 1;
         //WHEN
         int actual = PlayerCharacter.move(key);
         //THEN

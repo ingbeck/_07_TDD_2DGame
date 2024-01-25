@@ -14,10 +14,18 @@ public class PlayerCharacter {
     }
 
     public static int move(String key){
-        if(key.equals("w")){
-            return getX() + 1;
-        }else{
-            return getX();
+
+        switch(key){
+            case "w":
+                return getY() + 1;
+            case "s":
+                return getY() - 1;
+            case "a":
+                return getX() - 1;
+            case "d":
+                return getX() + 1;
+            default:
+                return 0;
         }
     }
 
